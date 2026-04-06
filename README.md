@@ -15,8 +15,6 @@ BUCK/
 ├── model_val_acc2approx.py          # ESR近似模型验证（主入口）
 ├── model_val_acc2imp.py             # 完整三模型GUI分析器
 ├── rbcot_formulas.py                # 核心公式库（传递函数/Bode分析）
-├── compensation_parameter_manager.py # 参数管理与持久化
-├── esr_crossover_exact.py           # ESR精确模型独立分析
 ```
 
 ## 核心文件说明
@@ -26,7 +24,6 @@ BUCK/
 | `rbcot_formulas.py` | 传递函数实现、Padé近似、Bode分析工具（计算引擎） |
 | `model_val_acc2imp.py` | 完整GUI，支持三种补偿模型切换与对比 |
 | `model_val_acc2approx.py` | ESR近似模型验证入口（继承主GUI，重载ESR计算链路） |
-| `compensation_parameter_manager.py` | 参数JSON持久化与稳定性分析接口 |
 
 ## `model_val_acc2approx.py` 详细说明
 
